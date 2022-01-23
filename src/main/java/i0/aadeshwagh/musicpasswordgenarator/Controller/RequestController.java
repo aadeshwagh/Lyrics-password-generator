@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import i0.aadeshwagh.Entity.Rule2;
-import i0.aadeshwagh.Entity.Rule1;
-import i0.aadeshwagh.Entity.Rule3;
-import i0.aadeshwagh.Entity.Rule4;
-import i0.aadeshwagh.Entity.track;
+import i0.aadeshwagh.musicpasswordgenarator.Entity.Rule1;
+import i0.aadeshwagh.musicpasswordgenarator.Entity.Rule2;
+import i0.aadeshwagh.musicpasswordgenarator.Entity.Rule3;
+import i0.aadeshwagh.musicpasswordgenarator.Entity.Rule4;
+import i0.aadeshwagh.musicpasswordgenarator.Entity.track;
 import reactor.core.publisher.Mono;
 
 @Controller
