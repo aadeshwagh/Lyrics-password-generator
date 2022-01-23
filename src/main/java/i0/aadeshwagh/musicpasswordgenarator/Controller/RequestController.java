@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.MultiValueMap;
@@ -22,7 +25,11 @@ import reactor.core.publisher.Mono;
 
 @Controller
 public class RequestController {
-    static final String apiKey = "${Serects.LYRICSAPIKEY}";
+
+    @Autowired
+    private Environment env;
+
+    String apiKey = env.getProperty("apikey");
     static final String host = "lyrics-finder1.p.rapidapi.com";
 
     List<String> songLines;
