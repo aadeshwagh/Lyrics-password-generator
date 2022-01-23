@@ -1,4 +1,4 @@
-package i0.aadeshwagh.Entity;
+package i0.aadeshwagh.musicpasswordgenarator.Entity;
 
 import java.util.Arrays;
 
