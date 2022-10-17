@@ -12,6 +12,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.Value;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import i0.aadeshwagh.musicpasswordgenarator.Entity.Rule1;
@@ -23,8 +24,8 @@ import reactor.core.publisher.Mono;
 
 @Controller
 public class RequestController {
-
-    String apiKey = "<>";
+    @Value("API_KEY")	
+    String apiKey;
     static final String host = "lyrics-finder1.p.rapidapi.com";
 
     List<String> songLines;
