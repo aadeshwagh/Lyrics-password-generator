@@ -24,8 +24,7 @@ import reactor.core.publisher.Mono;
 
 @Controller
 public class RequestController {
-    @Value("API_KEY")
-    String apiKey;
+    private String apiKey = "2f655372d1mshe796e7293b44562p1b6fcajsnb755cd133d30";
     static final String host = "lyrics-finder1.p.rapidapi.com";
 
     List<String> songLines;
